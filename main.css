@@ -1,0 +1,141 @@
+@font-face {
+    font-family: "Spicy Rice";
+    src: url(./fonts/SpicyRice-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Zilla Slab Regular";
+    src: url(./fonts/ZillaSlab-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Zilla Slab Regular";
+    background: rgb(0,52,99) url(./images/stars.png);
+}
+
+h1 {
+    font-family: "Spicy Rice";
+    font-size: 2em;
+    margin: 0;
+}
+
+a {
+    color: goldenrod;
+}
+
+a:visited {
+    color: gray;
+}
+
+a:hover {
+    color: goldenrod;
+}
+
+header {
+    width: fit-content;
+    margin: 100px auto;
+    text-align: center;
+    background-color: rgb(0,52,99, .75);
+}
+
+header h1, header p {
+    color: white;
+}
+
+header h1 {
+    font-size: 5em;
+}
+
+header p {
+    font-size: 1.5em;
+}
+
+.flex-container {
+    margin: auto;
+    padding: 0;
+    width: 75vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+}
+
+.flex-container li {
+    list-style: none;
+}
+
+.gallery-item {
+    margin: 30px;
+    width: 400px;
+    height: 600px;
+    background-color: lightgray;
+    box-shadow: 0 0 25px 10px rgb(0,30,60)
+}
+
+@media screen and (max-width: 500px) {
+    .gallery-item {
+        margin: 10px 0;
+        width: 300px;
+        height: 600px;
+        background-color: lightgray;
+        box-shadow: 0 0 10px 10px rgb(0,30,60)
+    }
+}
+
+.wizard-image {
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 20%;
+}
+
+.wizard-description {
+    margin: 10px 10px 0 10px;
+}
+
+.wizard-description h1, .wizard-description p {
+    text-align: center;
+}
+
+.wizard-description p {
+    margin: 5px;
+}
+
+footer {
+    margin: 60px auto 0 auto;
+    padding: 10px 10vw;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    background-color: rgb(0,30,60);
+}
+
+@media screen and (max-width: 500px) {
+    footer {
+        margin: 60px auto 0 auto;
+        padding: 10px 5vw;
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+        background-color: rgb(0,30,60);
+    }
+}
+
+footer p {
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+}
